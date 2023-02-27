@@ -5,7 +5,7 @@ import { shallow } from "zustand/shallow";
 // Fetch Data
 import useSWR from "swr";
 // Global State
-import useStore from "../hooks/useStore";
+import useStore from "@/hooks/useStore";
 // Fetch Loading
 import Loading from "../app/loading";
 

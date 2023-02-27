@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 // Styles
-import "../public/styles/css/normalize.css";
-import "../public/styles/sass/main.scss";
+import "@/css/normalize.css";
+import "@/sass/main.scss";
 // Header Component
-import Header from "../components/Header";
+import Header from "@/components/Header";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({

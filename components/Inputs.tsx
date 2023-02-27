@@ -1,7 +1,7 @@
 "use client";
 
 // Global State
-import useStore from "../hooks/useStore";
+import useStore from "@/hooks/useStore";
 import { shallow } from "zustand/shallow";
 
 export default function Inputs() {

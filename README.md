@@ -4,6 +4,7 @@ Explore the whole world at one place!
 This challenge is from [Frontend Mentor](https://www.frontendmentor.io/)
 
 ## Live preview
+
 Live preview is [here](https://world-explorer-youssef579.vercel.app/).
 
 ## Technologies

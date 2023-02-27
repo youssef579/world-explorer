@@ -24,7 +24,11 @@
         ],
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./*"]
+            "@/*": ["./*"],
+            "@/components/*": ["./components/*"],
+            "@/css/*": ["./public/styles/css/*"],
+            "@/sass/*": ["./public/styles/sass/*"],
+            "@/hooks/*": ["./hooks/*"],
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx"],

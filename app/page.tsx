@@ -1,5 +1,5 @@
-import Inputs from "../components/Inputs";
-import Countries from "../components/Countries";
+import Inputs from "@/components/Inputs";
+import Countries from "@/components/Countries";
 
 export default function CountriesPage() {
     return (
