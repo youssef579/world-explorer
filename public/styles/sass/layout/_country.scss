@@ -1,0 +1,41 @@
+@use '../helpers/variables' as *;
+
+.country-details {
+    padding-block: 50px;
+
+    .container {
+        max-width: 400px;
+
+        h1 {
+            margin-block: 15px;
+            font-size: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            a {
+                display: block;
+                padding: 2px 8px;
+                background-color: #b8b8b8;
+                transition: scale 0.3s;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}

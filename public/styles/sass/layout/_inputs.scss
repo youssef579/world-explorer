@@ -1,0 +1,39 @@
+@use '../helpers/mixins' as *;
+
+.inputs {
+    padding-block: 40px 50px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px 50px;
+
+        .search {
+            @include input(320px, 15px, 17px, ("position": relative));
+
+            input {
+                padding-left: 35px;
+            }
+
+            svg {
+                position: absolute;
+                width: 19px;
+                top: 50%;
+                left: 20px;
+                translate: 0 -50%;
+            }
+
+            @media (width <=549px) {
+                & {
+                    width: 100%;
+                }
+            }
+        }
+
+        select {
+            @include input(120px, 10px, 18px, ("appearance": auto));
+        }
+    }
+}

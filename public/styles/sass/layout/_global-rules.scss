@@ -1,0 +1,61 @@
+@use '../helpers/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-color: $bg;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+    padding-inline: 20px;
+
+    /* Small */
+    @media (min-width: 768px) {
+        & {
+            width: 750px;
+        }
+    }
+
+    /* Medium */
+    @media (min-width: 992px) {
+        & {
+            width: 970px;
+        }
+    }
+
+    /* Large */
+    @media (min-width: 1200px) {
+        & {
+            width: 1170px;
+        }
+    }
+}
+
+.result {
+    opacity: 0.8;
+    margin-left: 2px;
+    font-size: 15px;
+}
+
+button,
+input,
+select,
+a {
+    all: unset;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}

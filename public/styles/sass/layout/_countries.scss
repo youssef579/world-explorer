@@ -1,0 +1,47 @@
+@use '../helpers/variables' as *;
+
+.countries {
+    padding-bottom: 50px;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        justify-content: center;
+        gap: 50px;
+
+
+        .country {
+            display: flex;
+            flex-direction: column;
+            transition: scale 0.5s;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+
+            img {
+                width: 100%;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px 15px 15px;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 23px;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}

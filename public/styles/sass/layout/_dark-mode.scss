@@ -1,0 +1,38 @@
+@use '../helpers/variables' as *;
+
+body.dark {
+    background-color: $dark-bg;
+    color: white;
+
+    header {
+        background-color: $dark-element;
+
+    }
+
+    .countries .country {
+        background-color: $dark-element;
+    }
+
+    .search,
+    select {
+        background-color: $dark-element !important;
+        box-shadow: 0 0 7px 1px $dark-element !important;
+
+        input::placeholder {
+            color: white;
+            opacity: 0.8;
+        }
+
+        &:focus-within {
+            box-shadow: 0 0 5px 4px $dark-element !important;
+        }
+    }
+
+    path {
+        fill: white;
+    }
+
+    ul a {
+        background-color: $dark-element !important;
+    }
+}

@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+@mixin input($width, $pad, $size, $props) {
+    background-color: white;
+    width: $width;
+    padding: $pad;
+    font-size: $size;
+    box-shadow: 0 0 7px 1px $shadow;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    
+    @each $prop, $value in $props {
+        #{$prop}: $value;
+    }
+    
+    &:focus-within {
+        box-shadow: 0 0 10px 5px $shadow;
+    }
+}
