@@ -1,22 +1,20 @@
-import type { Metadata } from "next";
 // Styles
 import "@/css/normalize.css";
 import "@/sass/main.scss";
 // Header Component
 import Header from "@/components/Header";
 import { Roboto } from "next/font/google";
+// Vercel analysis
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["400", "500", "700"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
     title: "World Explorer",
     description: "Explore the whole world in your home !",
-    icons: {
-        icon: "/favicon.png",
-    },
     manifest: "/manifest.json",
 };
 
@@ -30,6 +28,7 @@ export default function RootLayout({
             <body className={roboto.className}>
                 <Header />
                 {children}
+                <Analytics />
             </body>
         </html>
     );

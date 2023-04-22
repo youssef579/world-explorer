@@ -19,7 +19,7 @@ interface Params {
 type CountryData = [CountryInfo, string[] | null];
 
 export function generateMetadata({ params: { country } }: Params) {
-    return { title: (country as string).replace(/%20/g, " ") };
+    return { title: country.replace(/%20/g, " ") };
 }
 
 async function fetchCountry(countryParam: string): Promise<CountryData> {
