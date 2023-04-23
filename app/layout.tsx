@@ -15,7 +15,6 @@ const roboto = Roboto({
 export const metadata = {
     title: "World Explorer",
     description: "Explore the whole world in your home !",
-    manifest: "/manifest.json",
 };
 
 export default function RootLayout({
